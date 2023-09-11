@@ -1,0 +1,59 @@
+/* Sign.css */
+
+.sign-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1616715278869-162f5fa9136d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BsYXNoJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+    
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    border: 1px solid black;
+    margin-top: 150px;
+    height: 300px;
+    justify-content: center;
+    width: 400px;
+  }
+  
+  input {
+    width: 300px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .button {
+    background-color:yellow;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color:rgb(161, 161, 30);
+  }
+  .sign-container .para{
+    margin-top: 5px;
+    background-color:rgb(22, 17, 17);
+    color: yellow;
+    height: 30px;
+    width: 400px;
+    text-align: center;
+  }
+  button[type="submit"]{
+    background-color: yellow;
+    color: black;
+    font-weight: 900;
+  }

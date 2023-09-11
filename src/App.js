@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Header from "./Component/Header/Header";
 
-function App() {
+import MainContentArea from "./Component/Sidebar/MainContentArea";
+import Sign from "./Component/Auth/Sign";
+import AllMailBoxComponent from "./Component/Sidebar/MoreOption/AllMailBoxComponent";
+import MainContent from "./Component/Sidebar/MainContent";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <div className="app-container">
+          <Route path="/" exact>
+            <Sign></Sign>
+          </Route>
+          <Route path="/mainPage">
+            <Header></Header>
+            <MainContentArea></MainContentArea>
+          </Route>
+          <Route path="/openmail/:id">
+            <AllMailBoxComponent />
+          </Route>
+          <Route path="/main">
+<MainContent></MainContent>
+          </Route>
+        </div>
+      </Switch>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

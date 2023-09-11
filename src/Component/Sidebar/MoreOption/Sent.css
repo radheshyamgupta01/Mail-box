@@ -1,0 +1,11 @@
+.sent{
+    height: 20px;
+    width: 20pxpx;
+}
+.sent-mail{
+    display: flex;
+    gap: 15px;
+} 
+.h5{
+    margin-left: 20px;
+}

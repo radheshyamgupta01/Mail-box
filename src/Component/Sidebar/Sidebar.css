@@ -1,0 +1,8 @@
+.sidebar{
+
+    background-color: lightyellow;
+    width: 20%;
+    height: calc(100vh - 50px);
+margin-right: 0;
+   
+}
